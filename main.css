@@ -1,0 +1,11 @@
+h1{
+    padding: 15px;
+}
+
+img{
+    display:none;
+}
+.active{
+    display: block;
+    
+}
