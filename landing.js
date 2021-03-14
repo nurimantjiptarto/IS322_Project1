@@ -18,7 +18,7 @@ setInterval(function(){
     
    i++;
    
-  }, 3000);
+  }, 4000);
 
 // a loop that switchs the active class when the counter hits 2 
 //must add setInterval so that the it stays on a picture for a certain amount of seconds 

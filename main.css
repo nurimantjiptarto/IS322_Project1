@@ -1,11 +1,15 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
 h1{
-    padding: 15px;
     text-align: center;
+    padding: 10px;
 }
 p{
-    padding: px;
     text-align: center; 
-    margin: 100px;
+    /*padding: px;
+    margin: 100px;*/
 }
 
 img{
@@ -17,6 +21,30 @@ img{
     background-size: 100% 100%;
 }
 
+
+
 .active{
     display: block;
 }
+
+.footer-basic {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color:#dfdfdf;
+    color:#4b4c4d;
+  }
+  
+  .productsTitle{ 
+      text-align: left;
+      margin: 5px 40px;
+  }
+
+  .filters{
+    display: flex;
+	margin: 10px 50px;
+
+  }
