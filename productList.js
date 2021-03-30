@@ -6,3 +6,7 @@ var mockDatabase = [
     { _id: '183', name: 'Maui Hair Conditioner', rating: '3 stars' },
     { _id: '007', name: 'Linen Set', rating: '4 stars' },
 ];
+
+function renderList(){
+    
+}

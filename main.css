@@ -22,7 +22,6 @@ img{
 }
 
 
-
 .active{
     display: block;
 }
@@ -39,12 +38,3 @@ img{
     margin-top: 50px;
 }
 
-.productsTitle{ 
-      text-align: left;
-      margin: 5px 40px;
-}
-
-.filters{
-    display: flex;
-	margin: 10px 50px;
-}
