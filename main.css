@@ -21,13 +21,18 @@ img{
     background-size: 100% 100%;
 }
 
+.container{
+    padding-bottom: 5px;
+}
+
 
 .active{
     display: block;
 }
 
 .footer-basic {
-    position: relative;
+
+    
     left: 0;
     bottom: 0;
     height: 100px;
@@ -36,5 +41,6 @@ img{
     background-color:#dfdfdf;
     color:#4b4c4d;
     margin-top: 50px;
+    
 }
 

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="productList.css">
     <link rel="stylesheet" href="main.css">
 
-    <title>Ecological</title>
+    <title>Products</title>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Ecological</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -32,51 +32,160 @@
 
 <body>
 
-    <h1 class="productsTitle">Products</h1>
-    <div="container">
-        <div class="filters">
-            <div class="form-group">
-                <label for="#">Filter By</label>
+    <!--
+    <div class="container">
+    -->
+
+
+        <!-- Filters -->
+        <h1 id="productsTitle">Products</h1>
+        <div id="filters">
+
+    
+            <div class="filter_options">
+                <label for="#">Order By</label>
                 <select id="#" name="#">
-                    <option value="#">Product type</option>
-                    <option value="#">Ratings</option>
+                    <option value="#">Name</option>
+                    <option value="#">Price</option>
                 </select>
             </div>
 
-            <div class="form-group" style="margin-left: 10px;">
-                <label for="#">Sort By</label>
+            <div class="filter_options" style="margin-left: 10px;">
+                <label for="#">Price Range</label>
                 <select id="#" name="#">
-                    <option value="#">Price (Lowest to Highest)</option>
-                    <option value="#">Title (A-Z)</option>
+                    <option value="#">$0.00 - $5.00</option>
+                    <option value="#">$5.00 - $9.99</option>
+                    <option value="#">$10.00 - $14.99</option>
+                    <option value="#">$15.00 - $19.99</option>
+                    <option value="#">$20.00 - $24.9</option>
+                </select>
+            </div>
+
+            <div class="filter_options" style="margin-left: 10px;">
+                <label for="#">Category</label>
+                <select id="#" name="#">
+                    <option value="#">Home Products</option>
+                    <option value="#">Hair Care</option>
+                    <option value="#">Skincare</option>
                 </select>
             </div>
         </div>
-        <div class="product-container">
-            <div class="product-cards">
-                <div class="card">Helloooooo</div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
 
+        <!-- Products Sections -->
+        <div id="product-cards" class="wrap">
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    
+                </div>	
+    
+                <div class="card_price">
+                    
+                </div>	
             </div>
+
+            <!--
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    Card #1 
+                </div>	
+    
+                <div class="card_price">
+                    $9.99
+                </div>	
+            </div>
+
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    Card #1 
+                </div>	
+    
+                <div class="card_price">
+                    $9.99
+                </div>	
+            </div>
+
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    Card #1 
+                </div>	
+    
+                <div class="card_price">
+                    $9.99
+                </div>	
+            </div>
+
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    Card #1 
+                </div>	
+    
+                <div class="card_price">
+                    $9.99
+                </div>	
+            </div>
+
+            <div class="card">
+                <div class = "card_image"></div>
+    
+                <div class="card_title">
+                    Card #1 
+                </div>	
+    
+                <div class="card_price">
+                    $9.99
+                </div>	
+            </div>
+            -->
+
+
+            
+
+            
         </div>
 
-        </div>
+                
+                <!--
+                <div class="card">
+                    <img id="product-img"></img>
+                    <p id="product-name">Name:</p>
+                    <p id="product-price">Price:</p>
+                </div>
+                
+                <div class="card">
+                    <img id="product-img"></img>
+                    <p id="product-name">Name:</p>
+                    <p id="product-price">Price:</p>
+                </div>
+                <div class="card">
+                    <img id="product-img"></img>
+                    <p id="product-name">Name:</p>
+                    <p id="product-price">Price:</p>
+                </div>
+            -->
+            
+           
+            
+            
+        
 
-        </div>
+    
 
 
 
 
 
+
+         <!-- Footer -->
         <div class="footer-basic">
             <footer>
                 <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
@@ -92,7 +201,11 @@
             </footer>
         </div>
 
-        <script src="productList.js"></script>
+    </div>
+    <script src="productList.js"></script>
+
+
+
 </body>
 
 </html>
