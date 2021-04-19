@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="productList.css">
-    <link rel="stylesheet" href="main.css">
+
 
     <title>Products</title>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -21,8 +21,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="productList.html">Products</a>
+                <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active" href="productList.html">Products</a>
                 <a class="nav-item nav-link" href="#">Contact</a>
             </div>
         </div>
@@ -43,136 +43,40 @@
 
     
             <div class="filter_options">
-                <label for="#">Order By</label>
-                <select id="#" name="#">
-                    <option value="#">Name</option>
-                    <option value="#">Price</option>
+                <label for="orderBy">Order By</label>
+                <select id="orderBy" name="#">
+                    <option value=""></option>
+                    <option value="name">Name</option>
+                    <option value="price">Price</option>
                 </select>
             </div>
 
             <div class="filter_options" style="margin-left: 10px;">
-                <label for="#">Price Range</label>
-                <select id="#" name="#">
-                    <option value="#">$0.00 - $5.00</option>
-                    <option value="#">$5.00 - $9.99</option>
-                    <option value="#">$10.00 - $14.99</option>
-                    <option value="#">$15.00 - $19.99</option>
-                    <option value="#">$20.00 - $24.9</option>
+                <label for="priceRange">Price Range</label>
+                <select id="priceRange" name="priceRange">
+                    <option id= "allProducts" value="all">All Products</option>
+                    <option value="14.99">$0.00 - $14.99</option>
+                    <option value="19.99">$15.00 - $19.99</option>
+                    <option value="20.00">$20.00+</option>
                 </select>
             </div>
 
             <div class="filter_options" style="margin-left: 10px;">
-                <label for="#">Category</label>
-                <select id="#" name="#">
-                    <option value="#">Home Products</option>
-                    <option value="#">Hair Care</option>
-                    <option value="#">Skincare</option>
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option id= "allProducts" value="all">All Products</option>
+                    <option id= "homeProducts" value="home">Home Products</option>
+                    <option id= "bodyProducts" value="body">Body Products</option>
+                    <option id= "skinProducts" value="skin">Skincare</option>
                 </select>
             </div>
         </div>
 
         <!-- Products Sections -->
         <div id="product-cards" class="wrap">
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    
-                </div>	
-    
-                <div class="card_price">
-                    
-                </div>	
-            </div>
-
-            <!--
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    Card #1 
-                </div>	
-    
-                <div class="card_price">
-                    $9.99
-                </div>	
-            </div>
-
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    Card #1 
-                </div>	
-    
-                <div class="card_price">
-                    $9.99
-                </div>	
-            </div>
-
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    Card #1 
-                </div>	
-    
-                <div class="card_price">
-                    $9.99
-                </div>	
-            </div>
-
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    Card #1 
-                </div>	
-    
-                <div class="card_price">
-                    $9.99
-                </div>	
-            </div>
-
-            <div class="card">
-                <div class = "card_image"></div>
-    
-                <div class="card_title">
-                    Card #1 
-                </div>	
-    
-                <div class="card_price">
-                    $9.99
-                </div>	
-            </div>
-            -->
-
-
-            
-
-            
         </div>
 
-                
-                <!--
-                <div class="card">
-                    <img id="product-img"></img>
-                    <p id="product-name">Name:</p>
-                    <p id="product-price">Price:</p>
-                </div>
-                
-                <div class="card">
-                    <img id="product-img"></img>
-                    <p id="product-name">Name:</p>
-                    <p id="product-price">Price:</p>
-                </div>
-                <div class="card">
-                    <img id="product-img"></img>
-                    <p id="product-name">Name:</p>
-                    <p id="product-price">Price:</p>
-                </div>
-            -->
-            
+    
            
             
             
