@@ -20,20 +20,13 @@
         
         var productCards = document.getElementById('product-cards');
         productCards.innerHTML = '';
-        
-
         //maps data info into cards
         results.map(function (res) {
-
             //dynamically creates card 
             var div = document.createElement('div');
-            
-
             div.className = 'card';
             div.id = res._id;
-            
             div.innerHTML = `
-        
                     <div class = "card_image">
                         <img src = ${res.image} style="width: 60%; height: 60%;">
                     </div> 
@@ -45,19 +38,18 @@
                     <div class="card_price">
                     ${res.price}
                     </div>	
-    
             `;
             productCards.appendChild(div);
         });
-        
-        
+   
     }
     //Puts mockdata into product cards 
     renderList(mockDatabase);
 
 
-    
-    
+
+
+
     // Function to Order results list 
 	function orderBy(sortValue) {
 		// Sort method varies based on what type of value we're sorting 
@@ -72,17 +64,24 @@
 				if (nameA > nameB) {
 				    return 1;
 				}
-			}) :
+			}) : sortValue === 'price' ?
             mockDatabase.sort(function (a, b) { // Numbers a booleans are much simpler. 
-                // Just need postive or negative number 
-                // Object properties can be accessed through a string representing their name
                 var priceA = parseFloat(a.price.replace(/\$/g, ""));
                 var priceB = parseFloat(b.price.replace(/\$/g, ""));
-                return priceA[sortValue] - priceB[sortValue];
-                });
+                // Just need postive or negative number 
+                // Object properties can be accessed through a string representing their name
+                return priceA - priceB;
+            }):  sortValue === 'all' ?  
+                body.innerHTML=  renderList(mockDatabase):
+
+            
+        
+        console.log(sortedResults);
         renderList(sortedResults);
     }
-	
+ 
+
+    
     
 	// Change events trigger after the value of a form input changes
 	document.querySelector('#orderBy').addEventListener('change', function(event){
