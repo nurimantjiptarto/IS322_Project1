@@ -23,7 +23,8 @@ body {
 	flex: 1 1 auto;
 	width: 100%;
 	margin: 10px;
-	padding: 5px;
+	bottom: 150px;
+	padding: 20px 5px 100px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -77,22 +78,6 @@ body {
 }
 
 /*
-
-#product-cards .card {
-	flex: 1 1 150px;
-	height: 150px;
-	background-color: #DCDCDC;
-	margin: 10px;
-}
-
-#product-cards .card p{
-	padding-top: 5px;
-	padding-left: 10px;
-	text-align: left;
-
-}
-*/
-
 .footer-basic {
 
     left: 0;
@@ -103,6 +88,22 @@ body {
     background-color:#dfdfdf;
     color:#4b4c4d;
     margin-top: 50px;
+    
+}
+*/
+
+.footer-basic {
+
+    position: relative;
+    margin-top: 50px;
+    height: 100px;
+    width: 100%;
+	bottom: 0;
+    text-align: center;
+	clear: both;
+    background-color:#dfdfdf;
+    color:#4b4c4d;
+
     
 }
 
