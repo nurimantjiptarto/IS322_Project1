@@ -28,7 +28,7 @@
             div.id = res._id;
             div.innerHTML = `
                     <div class = "card_image">
-                        <img src = ${res.image} style="width: 60%; height: 60%;">
+                        <img src = ${res.image}>
                     </div> 
         
                     <div class="card_title">

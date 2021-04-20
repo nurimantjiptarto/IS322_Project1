@@ -31,9 +31,9 @@ body {
 
 
 #product-cards .card{
-	height: 330px;
+	height: 300px;
 	width: 415px;
-	border: 2px solid #787878;
+	border: 2px solid #C0C0C0;
 	display: inline-block;
 	margin: 20px 20px;
 	display: flex;
@@ -42,23 +42,34 @@ body {
 
 }
 
+
 .card_image{
+	max-width:  410px;
+    max-height: 200px;
 	position:relative; 
 	justify-content: center;
 	display:flex;
+	padding: 10px 15px;
 	flex: 1 1 auto;
+}
+
+.card_image img {
+	width: 430px;
+    height:220px;
+	padding: 10px 15px;
+
 }
 
 
 .card_title {
-	padding: 20px 15px 0;
+	padding: 30px 15px 0px;
 	font-weight: 700;
 	color: #080808;
 	flex: 0 0 30px;
 }
 
 .card_price{ 
-	padding: 10px 15px;
+	padding: 2px 15px;
 	font-weight: 200;
 	color: #333;
 	flex: 0 0 20px;
